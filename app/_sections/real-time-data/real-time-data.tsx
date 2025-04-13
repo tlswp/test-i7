@@ -14,8 +14,7 @@ const RealTimeDataSection = () => {
     <Section>
       <SectionTitle subtitle="Data at your fingertips">
         Real-time insights for <br />
-        faster
-        <GradientText>decisions</GradientText>
+        faster <GradientText>decisions</GradientText>
       </SectionTitle>
 
       <div className="bg-dark rounded-2xl p-4 md:p-20">

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Roboto } from 'next/font/google';
 import './globals.css';
 import Container from '@/components/container';
 
@@ -8,6 +9,10 @@ export const metadata: Metadata = {
     'Torch makes data analysis easy for everyone. Visualise key metrics, track performance, and discover trends without needing a data science background.',
 };
 
+const roboto = Roboto({
+  subsets: ['latin'],
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -15,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-bg text-white`}>
+      <body className={`${roboto.className} bg-bg text-white`}>
         <Container>{children}</Container>
       </body>
     </html>

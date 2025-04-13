@@ -20,7 +20,7 @@ const Title: FC<TitleProps> = ({
     <Comp
       {...props}
       className={cn(
-        'text-3xl/[120%] md:text-5xl/[120%] lg:text-6xl/[120%] font-medium',
+        'text-3xl/tight md:text-5xl/tight lg:text-6xl/tight font-medium',
         className
       )}
     >
